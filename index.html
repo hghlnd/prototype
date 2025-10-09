@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Your Pockets</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Check Your Pockets</h1>
+    <p>Catalog your items and remember to check them!</p>
+
+    <input type="text" id="itemName" placeholder="Item name (e.g. Wallet)">
+    <input type="text" id="itemLocation" placeholder="Last location (e.g. Coat pocket)">
+    <button id="addItemButton">Add Item</button>
+    <button id="clearAllButton">Clear All</button>
+
+    <ul id="itemList"></ul>
+
+    <label for="reminderInterval">Reminder every (minutes):</label>
+    <input type="number" id="reminderInterval" min="1" value="10">
+    <button id="setReminderButton">Set Reminder</button>
+    <button id="cancelReminderButton">Cancel Reminder</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
